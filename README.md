@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/react-use-previous-hook.svg)](https://www.npmjs.com/package/react-use-previous-hook) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+### [View demo ↗](https://wsoeltz.github.io/react-use-previous-hook/)
+
 ## Install
 
 ```bash
@@ -22,12 +24,12 @@ const App = () => {
   const previousCount = usePrevious(count);
 
   return (
-    <>
+    <div>
       <h1>Current count: {count}</h1>
       <h1>Previous count: {previousCount}</h1>
       <button onClick={() => setCount(count - 1)}>Count -</button>
       <button onClick={() => setCount(count + 1)}>Count +</button>
-    </>
+    </div>
   );
 }
 
