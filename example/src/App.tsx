@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import usePrevious from 'react-use-previous-hook'
-import 'react-use-previous-hook/dist/index.css'
 
 const App = () => {
   const [count, setCount] = useState<number>(0);
